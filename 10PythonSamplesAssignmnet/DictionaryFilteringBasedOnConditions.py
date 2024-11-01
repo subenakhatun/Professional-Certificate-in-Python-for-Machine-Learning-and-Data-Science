@@ -8,8 +8,11 @@ students_marks = {
 'Marks': [80,94,86],
 'Passing Year':[2021,2022,2023]                         
 }
-print(students_marks)
-# Filtering to retain scores >= 80
-
-for name, value in students_marks:
-    print(value)
+# print(students_marks)
+# show 80 marks
+empty = []
+for name, value in students_marks.items():
+    for value_position in value:
+        if value_position == 80:
+            print(f'{name}: {value_position}')
+    # print(name,value[0])
