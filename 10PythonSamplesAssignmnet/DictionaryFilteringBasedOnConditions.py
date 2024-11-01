@@ -16,3 +16,7 @@ for name, value in students_marks.items():
         if value_position == 80:
             print(f'{name}: {value_position}')
     # print(name,value[0])
+
+# find keys, values pair
+for name, value in students_marks.items():
+    print(name,value)
