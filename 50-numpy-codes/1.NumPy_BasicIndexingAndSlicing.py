@@ -14,3 +14,6 @@ print(f'Print last value: {array_1[-1]}')
 # slicing
 # print 2no to 5 no position values
 print(f'Show from 2nd to 5th no values: {array_1[1:5]}')
+
+# print every odd position values: start, end, step
+print(f'All odd postion values: {array_1[0:7:2]}')
