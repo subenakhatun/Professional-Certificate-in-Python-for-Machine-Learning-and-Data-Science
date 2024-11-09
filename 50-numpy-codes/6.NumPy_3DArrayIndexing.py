@@ -13,3 +13,6 @@ print(array_3d[0, 0, 0])
 
 # find the value 10
 print(array_3d[1, 1, 0])
+
+# Slicing in 3D 
+print(array_3d[:, 0, 2]) # : 1st to last, 0 every 1st row, 
