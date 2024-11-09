@@ -6,3 +6,11 @@ print(array_1)
 
 # accessing elements by index: index start from 0
 print(f'Print 2 no position value: {array_1[3]}')
+
+# negative indexing
+# print last values
+print(f'Print last value: {array_1[-1]}')
+
+# slicing
+# print 2no to 5 no position values
+print(f'Show from 2nd to 5th no values: {array_1[1:5]}')
