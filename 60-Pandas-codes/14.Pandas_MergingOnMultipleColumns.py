@@ -12,10 +12,12 @@ data = {
     'Mobile No':[1894858170,78795,236958,789456,123654,789654,123654]
 }
 df = pd.DataFrame(data)
-df1 = pd.DataFrame({'ID': [1, 2, 3], 'Year': [2020, 2021, 2021], 'Name': ['Alice', 'Bob', 'Charlie']})
+print(df,'\n')
+df1 = pd.DataFrame({'ID': [1, 2, 3,4,5,6,7], 'Year': [2020, 2021, 2021,2023,2024,2025,2026], 
+                    'Name': ['Alice', 'Bob', 'Charlie','Ami','Maisha','Mitul','Shafali']})
 df2 = pd.DataFrame({'ID': [2, 3, 1], 'Year': [2021, 2021, 2020], 'Score': [88, 92, 75]})
 
 # Merging on multiple columns
-merged_df = pd.merge(df1, df2, on=['ID', 'Year'], how='inner')
+merged_df = pd.merge(df, df1, on=['ID', 'Name'], how='outer')
 
 print('Merged DataFrame on Multiple Columns:\n', merged_df)
