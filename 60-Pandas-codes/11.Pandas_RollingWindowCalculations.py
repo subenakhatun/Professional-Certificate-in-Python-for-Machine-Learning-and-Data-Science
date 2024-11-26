@@ -7,6 +7,12 @@ data = {'Sales': [100, 200, 150, 300, 250, 400, 300, 350, 300, 400]}
 df = pd.DataFrame(data, index=date_range)
 
 # Calculating a rolling mean with a window of 3 days
+# window 3 means por por 3 ta value niye kaj kora
+# important ase . data analysis a kaj a lagbe
 df['Rolling Mean'] = df['Sales'].rolling(window=3).mean()
 
+df['New columns Sum'] = df['Sales'].rolling(window=4).sum()
 print('DataFrame with Rolling Mean:\n', df)
+
+average = (150+300+250)/3
+print(average)
