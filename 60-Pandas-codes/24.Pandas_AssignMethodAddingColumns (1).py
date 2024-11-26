@@ -9,7 +9,7 @@ data = {
 df = pd.DataFrame(data)
 
 # Adding a new column using assign
-df = df.assign(Grade=lambda x: ['A' if score >= 90 else 'B' for score in x['Score']])
+df = df.assign(Grade=lambda x: ['A+' if score >= 90 else 'A' for score in x['Score']])
 
 print('DataFrame with Assigned Grade Column:\n', df)
 
