@@ -9,6 +9,13 @@ print(df)
 # Applying a lambda function to modify scores
 df['Adjusted Score'] = df['Score'].apply(lambda x: x + 5 if x < 90 else x)
 print(df['Adjusted Score'] )
-print(df)   
+print(df)  
+# undersatnd 
+def Adjusted_score(x):
+    if x < 90:
+        print(x+5)
+    else:
+        print(x)
+df['Score'].apply(Adjusted_score)
 
 # print('DataFrame with Adjusted Scores:\n', df)
