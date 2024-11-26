@@ -9,3 +9,4 @@ df = pd.DataFrame(data)
 df['Performance'] = pd.cut(df['Score'], bins=[0, 70, 90, 100], labels=['A', 'V', 'C'])
 
 print('DataFrame with Categorical Performance:\n', df)
+print('Try again')
